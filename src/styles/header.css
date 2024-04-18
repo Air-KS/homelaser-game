@@ -1,0 +1,45 @@
+/* ./src/styles/header.css */
+
+body {
+  font-family: var(--font-family-menu); /* Utilise la police de base pour le texte du corps */
+}
+
+.top-banner {
+  display: flex;
+  background-color: #2C2C2C; /* Couleur de fond */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  border-bottom: 1px solid #444; /* Contour en bas de la bande */
+  border-radius: 0 0 10px 10px; /* Arrondir les angles en bas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre portée */
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.left-container, .right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  max-height: 50px;
+  width: auto;
+}
+
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 60px; /* espace entre les liens */
+}
