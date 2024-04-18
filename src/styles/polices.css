@@ -1,0 +1,22 @@
+/* ./src/styles/polices.css */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../assets/fonts/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../assets/fonts/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mistletoe-Regular';
+  src: url('../../assets/fonts/Mistletoe-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
