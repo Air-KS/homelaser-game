@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+:root {
+  --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-menu: 'Source Sans Pro Bold', 'Helvetica Neue', Helvetica, sans-serif, Arial;
+}
