@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/homelaser-game/static/css/main.903f6e9c.css",
+    "main.js": "/homelaser-game/static/js/main.7ff007e0.js",
+    "static/js/453.6ab63d13.chunk.js": "/homelaser-game/static/js/453.6ab63d13.chunk.js",
+    "index.html": "/homelaser-game/index.html",
+    "main.903f6e9c.css.map": "/homelaser-game/static/css/main.903f6e9c.css.map",
+    "main.7ff007e0.js.map": "/homelaser-game/static/js/main.7ff007e0.js.map",
+    "453.6ab63d13.chunk.js.map": "/homelaser-game/static/js/453.6ab63d13.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.903f6e9c.css",
+    "static/js/main.7ff007e0.js"
+  ]
+}
