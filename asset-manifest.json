@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/homelaser-game/static/css/main.903f6e9c.css",
-    "main.js": "/homelaser-game/static/js/main.7ff007e0.js",
+    "main.css": "/homelaser-game/static/css/main.8e80e244.css",
+    "main.js": "/homelaser-game/static/js/main.6d9cdb22.js",
     "static/js/453.6ab63d13.chunk.js": "/homelaser-game/static/js/453.6ab63d13.chunk.js",
+    "static/media/SourceSansPro-Bold.otf": "/homelaser-game/static/media/SourceSansPro-Bold.751d4a14f36df3f4d63c.otf",
+    "static/media/SourceSansPro-Regular.otf": "/homelaser-game/static/media/SourceSansPro-Regular.7a9975d8c02d6933c47d.otf",
+    "static/media/Mistletoe-Regular.ttf": "/homelaser-game/static/media/Mistletoe-Regular.f309805678c875437d04.ttf",
+    "static/media/Melanox.otf": "/homelaser-game/static/media/Melanox.418a7ace3d56a1f576a3.otf",
     "index.html": "/homelaser-game/index.html",
-    "main.903f6e9c.css.map": "/homelaser-game/static/css/main.903f6e9c.css.map",
-    "main.7ff007e0.js.map": "/homelaser-game/static/js/main.7ff007e0.js.map",
+    "main.8e80e244.css.map": "/homelaser-game/static/css/main.8e80e244.css.map",
+    "main.6d9cdb22.js.map": "/homelaser-game/static/js/main.6d9cdb22.js.map",
     "453.6ab63d13.chunk.js.map": "/homelaser-game/static/js/453.6ab63d13.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.903f6e9c.css",
-    "static/js/main.7ff007e0.js"
+    "static/css/main.8e80e244.css",
+    "static/js/main.6d9cdb22.js"
   ]
 }
