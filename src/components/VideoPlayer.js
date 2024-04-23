@@ -2,8 +2,6 @@
 
 import '../styles/header.css';
 
-import '../styles/VideoBackground.css';
-
 const VideoPlayer = ({ videoId }) => {
   const videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&mute=1&loop=1&playlist=${videoId}&modestbranding=1&autohide=1&disablekb=1&fs=0`;
 
