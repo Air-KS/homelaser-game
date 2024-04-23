@@ -20,3 +20,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Melanox';
+  src: url('../../assets/fonts/Melanox.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
