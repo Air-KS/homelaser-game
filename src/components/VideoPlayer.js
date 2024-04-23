@@ -1,5 +1,7 @@
 // ./src/components/VideoPlayer.js
 
+import '../styles/header.css';
+
 import '../styles/VideoBackground.css';
 
 const VideoPlayer = ({ videoId }) => {
@@ -14,6 +16,17 @@ const VideoPlayer = ({ videoId }) => {
         title="Video Player"
         className="video-iframe"
       ></iframe>
+
+      <div className="video-center-title">LASER GAME AT HOME</div>
+
+      <div className="video-bottom-banner">
+        {/* Contenu du bottom-banner si nécessaire */}
+        <div className='bottom-banner-content'>
+          <p>You can visit the official website : {' '}
+          <a href="https://homelaser.fr/" className="bottom-banner-link">Homelaser</a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
