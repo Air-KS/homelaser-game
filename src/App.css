@@ -1,31 +1,12 @@
-.App {
-  text-align: center;
-}
+/* src/App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('./styles/polices.css');
+@import url('./styles/header.css');
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -37,9 +18,74 @@
   }
 }
 
+  :root {
+    --color-primary: #D73953;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-grey: #a0a0a0;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --color-red: #cd3e65;
+    --color-green: #08805b;
+    --color-orange: #DC7F00;
+    --color-homelaser: #ff4d00;
 
-:root {
-  --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-menu: 'Source Sans Pro Bold', 'Helvetica Neue', Helvetica, sans-serif, Arial;
-}
+    --text-color: var(--color-black);
+
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-menu: 'Source Sans Pro Bold', sans-serif, 'Helvetica Neue', Helvetica, Arial;
+    --font-family-titleName: 'Marshal-Risk', sans-serif, 'Helvetica Neue', Helvetica, Arial;
+
+    /** NAVBAR **/
+    --nav-item-font-family: var(--font-family-headings);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: .04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 0 5rem;
+    --nav-item-link-hover: var(--color-primary);
+
+    /** MOTION **/
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  a:visited {
+    font-style: italic;
+  }
+  a:hover {
+    color: var(--color-orange);
+    text-decoration: none;
+  }
+
+  @media (max-width: 480px) {
+    html {
+      font-size: 57%;
+    }
+    .logo {
+      max-height: 50px;
+      width: auto;
+      margin: 5px 0px 0px 20%;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+@media (max-width: 767px) {
+  :root {
+    --nav-item-margin: 0;
+  }
+  .navbar-menu {
+    display: none;
+    flex: 1;
+  }
+ }
