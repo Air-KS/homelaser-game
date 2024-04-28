@@ -1,0 +1,29 @@
+/* Styles de base pour le corps */
+body {
+  font-family: Arial, sans-serif; /* Choisir une police de caractères */
+  background-color: #f0f0f0; /* Choisir une couleur de fond */
+  color: #333; /* Choisir une couleur de texte */
+  margin: 0; /* Supprimer les marges par défaut */
+  padding: 0; /* Supprimer les espaces de remplissage par défaut */
+  text-align: center; /* Aligner le texte horizontalement au centre de l'écran */
+}
+
+/* Conteneur pour le corps de la page */
+.conteneurBody, .bodyConteneur {
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+  padding: 20px; /* Espacement autour du contenu */
+}
+
+/* Classe pour le texte du corps */
+.bodyText {
+  font-size: 100px; /* Taille de la police pour le texte du corps */
+  line-height: 1.6; /* Espacement entre les lignes */
+}
+
+/* Classe pour les titres */
+.bodyTitre {
+  font-size: 100px; /* Taille de la police pour les titres */
+  font-weight: bold; /* Texte en gras */
+  margin-bottom: 100px; /* Espace en bas des titres */
+}
