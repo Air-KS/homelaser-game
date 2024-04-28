@@ -1,11 +1,12 @@
-/* src/App.css */
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import './App.css';
 import './styles/header.css';
+import './styles/body.css';
 
 import VideoPlayer from './components/VideoPlayer';
+import Home from "./navigation/home";
 import Contact from "./navigation/contact";
 import Login from "./navigation/login";
 
@@ -27,7 +28,7 @@ function App() {
                     <Link to='/contact' className='nav-menu-link'>Contact us</Link>
                   </li>
                   <li className='nav-menu-item'>
-                    <Link to='navigation/login' className='nav-menu-link'>Login</Link>
+                    <Link to='/login' className='nav-menu-link'>Login</Link>
                   </li>
                 </ul>
               </nav>
@@ -45,8 +46,9 @@ function App() {
       </div>
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/navigation/login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
