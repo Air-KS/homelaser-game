@@ -1,4 +1,8 @@
-import React from 'react';
+/*
+  ./src/App.js
+*/
+
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import './App.css';
@@ -10,7 +14,15 @@ import Home from "./navigation/home";
 import Contact from "./navigation/contact";
 import Login from "./navigation/login";
 
+import LaserHub from "./navigation/laserhub";
+
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <Router>
       <div className='header' data-section-theme="dark">
@@ -22,8 +34,18 @@ function App() {
               </a>
             </div>
             <div className='right-container'>
-              <nav className='navbar-menu'>
+              {/* Ajoute un bouton pour basculer le menu sur petits écrans */}
+              <button className={`menu-toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
+                <span className="menu-toggle-bar top-bar"></span>
+                <span className="menu-toggle-bar middle-bar"></span>
+                <span className="menu-toggle-bar bottom-bar"></span>
+              </button>
+              {/* Modifie le nav pour ajouter une classe conditionnelle basée sur l'état isMenuOpen */}
+              <nav className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
                 <ul className='nav-menu'>
+                  <li className='nav-menu-item'>
+                    <Link to='/home' className='nav-menu-link'>Home</Link>
+                  </li>
                   <li className='nav-menu-item'>
                     <Link to='/contact' className='nav-menu-link'>Contact us</Link>
                   </li>
@@ -47,8 +69,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/laserhub" element={<LaserHub />} />
       </Routes>
     </Router>
   );

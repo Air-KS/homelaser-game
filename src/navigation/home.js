@@ -1,11 +1,18 @@
-// Home.js
+/*
+  ./src/navigation/home.js
+*/
+
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import '../styles/body.css';
 
 const Home = () => {
+
   return (
-    <div className='conteneurBody'>
+    <div className='containerBody'>
       <h1>Bienvenue sur notre site</h1>
-      <p>Ceci est la page d'accueil</p>
+      <p><Link to='/laserhub'>Visitez LaserHub</Link></p>
     </div>
   );
 }
