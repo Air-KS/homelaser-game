@@ -140,7 +140,7 @@ a:hover {
   .menu-toggle {
     display: block;
     position: absolute;
-    right: 60px;
+    right: 5%;
     top: 12px
   }
 
