@@ -174,3 +174,9 @@ a:hover {
     /* Empêche le texte de passer à la ligne suivante */
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .menu-toggle-bar {
+    background-color: #DCE3EC; /* Couleur grise pour le thème sombre */
+  }
+}
