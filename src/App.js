@@ -29,7 +29,7 @@ function App() {
         <div className="top-banner">
           <div className="header-container">
             <div className="left-container">
-              <a href="https://air-ks.github.io/homelaser-game/">
+              <a href="https://homelaser-game.vercel.app/">
                 <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className="logo" />
               </a>
             </div>
