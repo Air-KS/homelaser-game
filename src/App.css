@@ -183,6 +183,6 @@ a:hover {
 
 @media (prefers-color-scheme: light) {
   .menu-toggle-bar {
-    background-color: #e7d63a; /* Couleur grise pour le thème sombre */
+    background-color: #DC7F00; /* Couleur grise pour le thème sombre */
   }
 }
