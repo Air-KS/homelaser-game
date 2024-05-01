@@ -25,7 +25,7 @@ function App() {
 
   return (
     <Router>
-      <div className='header' data-section-theme="dark">
+      <div className='header' data-section-theme="light">
         <div className="top-banner">
           <div className="header-container">
             <div className="left-container">

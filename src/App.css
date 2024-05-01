@@ -88,7 +88,7 @@ a:hover {
   display: block;
   width: 35px;
   height: 5px;
-  background-color: #DCE3EC;
+  /* background-color: #DCE3EC; */
   margin: 6px 0;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
@@ -178,5 +178,11 @@ a:hover {
 @media (prefers-color-scheme: dark) {
   .menu-toggle-bar {
     background-color: #DCE3EC; /* Couleur grise pour le thème sombre */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .menu-toggle-bar {
+    background-color: #e7d63a; /* Couleur grise pour le thème sombre */
   }
 }
