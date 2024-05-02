@@ -76,7 +76,7 @@ a:hover {
 .menu-toggle {
   display: none;
   position: absolute;
-  top: 10px;
+  top: 100px;
   right: 10px;
   z-index: 100;
   background: none;
@@ -141,7 +141,7 @@ a:hover {
     display: block;
     position: absolute;
     right: 5%;
-    top: 12px
+    top: 5px;
   }
 
   /* Lorsque le menu est actif, on l'affiche */
@@ -151,7 +151,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 50px;
+    top: 30px;
     right: 0;
     left: 0;
     margin: 9px 0px 0px 0px;
@@ -160,7 +160,6 @@ a:hover {
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
-    z-index: 99;
   }
 
   .nav-menu-item {
