@@ -3,11 +3,11 @@
 */
 
 .footer {
+  margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
 }
