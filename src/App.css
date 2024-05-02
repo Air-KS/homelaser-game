@@ -63,8 +63,15 @@
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-    /* Global
+/* Global
     ============================= */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  /* Assure que le html et le body s'étendent pleinement */
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -177,40 +184,58 @@ a:hover {
   }
 }
 
-    /* Theme
+/* Theme
     ============================= */
 @media (prefers-color-scheme: dark) {
   .menu-toggle-bar {
-    background-color: #DCE3EC; /* Couleur grise pour le thème sombre */
+    background-color: #DCE3EC;
+    /* Couleur grise pour le thème sombre */
   }
+
   body {
     background-color: var(--bg-body-dark);
     color: var(--color-text-dark);
   }
-  .nav-menu .nav-menu-link, .bottom-banner-link,
-  .footer, .top-banner, .video-bottom-banner {
+
+  .nav-menu .nav-menu-link,
+  .bottom-banner-link,
+  .footer,
+  .top-banner,
+  .video-bottom-banner {
     color: var(--color-text-dark);
   }
-  .navbar-menu.active, .footer,
-  .top-banner, .video-bottom-banner {
+
+  .navbar-menu.active,
+  .footer,
+  .top-banner,
+  .video-bottom-banner {
     background-color: var(--bandeau-color-dark);
   }
 }
 
 @media (prefers-color-scheme: light) {
   .menu-toggle-bar {
-    background-color: #DC7F00; /* Couleur grise pour le thème sombre */
+    background-color: #DC7F00;
+    /* Couleur grise pour le thème sombre */
   }
+
   body {
     background-color: var(--bg-body-light);
     color: var(--color-text-light);
   }
-  .nav-menu .nav-menu-link, .bottom-banner-link,
-  .footer, .top-banner, .video-bottom-banner {
+
+  .nav-menu .nav-menu-link,
+  .bottom-banner-link,
+  .footer,
+  .top-banner,
+  .video-bottom-banner {
     color: var(--color-text-light);
   }
-  .navbar-menu.active, .footer,
-  .top-banner, .video-bottom-banner {
+
+  .navbar-menu.active,
+  .footer,
+  .top-banner,
+  .video-bottom-banner {
     background-color: var(--bandeau-color-light);
   }
 }
