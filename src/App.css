@@ -34,12 +34,20 @@
   --color-orange: #DC7F00;
   --color-homelaser: #ff4d00;
 
-  --text-color: var(--color-black);
-
   --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-family-menu: 'Source Sans Pro Bold', sans-serif, 'Helvetica Neue', Helvetica, Arial;
   --font-family-titleName: 'Marshal-Risk', sans-serif, 'Helvetica Neue', Helvetica, Arial;
+
+  /** Theme Dark and Light **/
+  --bandeau-color-dark: #2C2C2C;
+  --color-text-dark: #d1d1d1;
+  --bg-body-dark: #0f161f;
+  /* light */
+  --bandeau-color-light: #a5a4a4;
+  --color-text-light: #03121b;
+  --bg-body-light: #dae4f0;
+  --link-color-light: ;
 
   /** NAVBAR **/
   --nav-item-font-family: var(--font-family-headings);
@@ -55,6 +63,8 @@
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
+    /* Global
+    ============================= */
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -67,10 +77,6 @@ a:visited {
 a:hover {
   color: var(--color-orange);
   text-decoration: none;
-}
-
-.menu-toggle {
-  display: none;
 }
 
 .menu-toggle {
@@ -88,7 +94,6 @@ a:hover {
   display: block;
   width: 35px;
   height: 5px;
-  /* background-color: #DCE3EC; */
   margin: 6px 0;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
@@ -156,7 +161,6 @@ a:hover {
     left: 0;
     margin: 9px 0px 0px 0px;
     width: 100%;
-    background: #2C2C2C;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
@@ -170,18 +174,43 @@ a:hover {
   .nav-menu-link {
     padding: 0px;
     white-space: nowrap;
-    /* Empêche le texte de passer à la ligne suivante */
   }
 }
 
+    /* Theme
+    ============================= */
 @media (prefers-color-scheme: dark) {
   .menu-toggle-bar {
     background-color: #DCE3EC; /* Couleur grise pour le thème sombre */
+  }
+  body {
+    background-color: var(--bg-body-dark);
+    color: var(--color-text-dark);
+  }
+  .nav-menu .nav-menu-link, .bottom-banner-link,
+  .footer, .top-banner, .video-bottom-banner {
+    color: var(--color-text-dark);
+  }
+  .navbar-menu.active, .footer,
+  .top-banner, .video-bottom-banner {
+    background-color: var(--bandeau-color-dark);
   }
 }
 
 @media (prefers-color-scheme: light) {
   .menu-toggle-bar {
     background-color: #DC7F00; /* Couleur grise pour le thème sombre */
+  }
+  body {
+    background-color: var(--bg-body-light);
+    color: var(--color-text-light);
+  }
+  .nav-menu .nav-menu-link, .bottom-banner-link,
+  .footer, .top-banner, .video-bottom-banner {
+    color: var(--color-text-light);
+  }
+  .navbar-menu.active, .footer,
+  .top-banner, .video-bottom-banner {
+    background-color: var(--bandeau-color-light);
   }
 }
