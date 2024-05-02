@@ -58,7 +58,7 @@ function App() {
           </div>
         </div>
 
-        <VideoPlayer videoId="AKSgdx_VPRQ" />
+        <VideoPlayer videoPath={require("./assets/video/background.mp4")} />
 
         <div className="bottom-banner">
           <div className="bottom-banner-content">
