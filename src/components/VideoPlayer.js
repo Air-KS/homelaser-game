@@ -2,26 +2,31 @@
 
 import '../styles/header.css';
 
-const VideoPlayer = ({ videoId }) => {
-  const videoSrc = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&mute=1&loop=1&playlist=${videoId}&modestbranding=1&autohide=1&disablekb=1&fs=0`;
-
+const VideoPlayer = ({ videoPath }) => {
   return (
     <div className="video-background">
       <div className="video-overlay"></div>
-      <iframe
-        src={videoSrc}
-        allowFullScreen
+      <video
+        src={videoPath}
+        autoPlay
+        loop
+        muted
+        playsInline
         title="Video Player"
         className="video-iframe"
-      ></iframe>
+      ></video>
 
       <div className="video-center-title">LASER GAME AT HOME</div>
 
+      <div className="video-center-links">
+        <a href="https://homelaser.fr/home/tarifs/tarifs-locations/" className="video-link">LOCATION {'>'} </a>
+        <a href="https://homelaser.fr/home/tarifs/regions/" className="video-link">ANIMATION {'>'} </a>
+      </div>
+
       <div className="video-bottom-banner">
-        {/* Contenu du bottom-banner si nécessaire */}
         <div className='bottom-banner-content'>
-          <p>You can visit the official website : {' '}
-          <a href="https://homelaser.fr/" className="bottom-banner-link">Homelaser</a>
+          <p>You can visit the official website : {" "}
+            <a href="https://homelaser.fr/" className="bottom-banner-link">Homelaser</a>
           </p>
         </div>
       </div>
