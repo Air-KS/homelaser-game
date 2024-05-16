@@ -14,6 +14,7 @@ import VideoPlayer from './components/VideoPlayer';
 import Home from "./navigation/home";
 import Contact from "./navigation/contact";
 import Login from "./navigation/login";
+import Signin from "./navigation/signin";
 
 import LaserHub from "./navigation/laserhub";
 
@@ -73,6 +74,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/laserhub" element={<LaserHub />} />
+          <Route path="/signin" element={<Signin />} />
         </Routes>
       </Router>
 
