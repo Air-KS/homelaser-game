@@ -3,12 +3,11 @@
 */
 
 import React, { useRef, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import '../styles/body.css';
 import '../styles/formStyle.css';
 
-const Login = () => {
+const Signin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const loginRef = useRef(null);
@@ -32,7 +31,7 @@ const Login = () => {
   return (
     <div className="containerBody">
       <div ref={loginRef}>
-        <h1>Login</h1>
+        <h1>Sign in</h1>
         <p>Veuillez vous connecter pour accéder à votre compte.</p>
         <div className='form-container'>
         <form className="" onSubmit={handleLoginSubmit}>
@@ -44,13 +43,12 @@ const Login = () => {
             Password
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
           </label>
-          <button type="submit">Se connecter</button>
+          <button type="submit">S'inscrire</button>
         </form>
-        <p style={{fontSize:'15px'}}><Link to='/signin'>No account</Link></p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signin;

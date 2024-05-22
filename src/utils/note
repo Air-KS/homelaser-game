@@ -1,0 +1,26 @@
+Lors de l'ajout du projet :
+- npm install
+
+pour allumer le serveur
+- sudo service postgresql start
+
+Pour eteindre le serveur
+- sudo service postgresql stop
+
+pour lancer le server
+- npm run server ou node backend/server.js
+
+pour lancer le site
+- npm run start
+
+Pour identifier le processus qui utilise le port
+- sudo ps -aux | grep ":3000" (Rempace 3000 par le port à identifier)
+
+Pour tuer le port
+- sudo kill 1234 (Rempplace )
+
+
+# Pour postgres SQL
+
+pour lancer postgres depuis le terminal
+- sudo -u postgres psql
