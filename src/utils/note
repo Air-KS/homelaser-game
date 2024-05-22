@@ -1,3 +1,6 @@
+Lors de l'ajout du projet :
+- npm install
+
 pour allumer le serveur
 - sudo service postgresql start
 
